@@ -32,7 +32,7 @@ end
 def select_series_title_with_most_human_characters
   "SELECT series.title
   FROM series, authors, characters
-  WHERE series.subgenre_id = subgenres.id
+  WHERE series.author_id = authors.id
   AND authors.id = series.author_id"
 end
 
